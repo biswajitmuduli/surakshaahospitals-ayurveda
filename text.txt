@@ -1,0 +1,260 @@
+<!------------- Trending Product Section start ----------->
+    <div class="ayur-bgcover ayur-trenproduct-sec" >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="ayur-heading-wrap">
+              <h5>Therapies</h5>
+              <h3>Ayurveda’s Panchakarma therapies</h3>
+              <p>
+                Ayurveda’s Panchakarma therapies are a set of five (Pancha =
+                five, Karma = actions) detoxification and rejuvenation
+                procedures. These therapies are considered essential for
+                cleansing the body of toxins (Amar), balancing the Dashes (Vat,
+                Pitta, Kappa), and restoring natural health. Here are the five
+                Panchakarma therapies with details on each:
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMPONENT SECTION -->
+        <div class="row">
+          <div class="slider-wrapper">
+            <button class="arrow" onclick="scrollSlider2(-200)">
+              &#10094;
+            </button>
+            <div class="departments" id="deptList2"></div>
+            <button class="arrow" onclick="scrollSlider2(200)">&#10095;</button>
+          </div>
+
+          <div class="content">
+            <img
+              id="deptImage2"
+              src="assets/images-new/Vamana.png"
+              alt="Department"
+            />
+            <div class="text-content">
+              <h2>
+                Welcome to our
+                <span id="deptTitle2" style="font-size: 20px"
+                  >Vamana (Therapeutic Emesis)</span
+                >
+              </h2>
+
+              <span>Purpose:</span>
+              <p id="deptDesc2">
+                To eliminate excess Kappa osha, primarily from the respiratory
+                and digestive tract.
+              </p>
+
+              <!-- TYPES SECTION -->
+              <div id="typeSection" style="display: none">
+                <span id="typesLabel">Types:</span>
+                <ul id="typeList2"></ul>
+              </div>
+
+              <span>Procedure:</span>
+              <ul id="procedureList2">
+                <li>
+                  Pre-procedure: Internal and external operation (Smetana) and
+                  sudation (Sweden).
+                </li>
+                <li>
+                  Emesis is induced using herbal decoctions like Madan Phaal,
+                  Licorice, or salt water.
+                </li>
+                <li>The procedure is supervised to ensure safe vomiting.</li>
+              </ul>
+
+              <span>Benefits:</span>
+              <ul id="benefitsList2">
+                <li>
+                  Effective in conditions like asthma, bronchitis, sinus
+                  congestion, chronic cold, and skin diseases.
+                </li>
+                <li>Enhances metabolism and mental clarity.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- SCRIPT -->
+          <script>
+            const departments2 = [
+              {
+                name: "Vamana (Therapeutic Emesis)",
+                icon: "assets/images-new/ayurvedic1.png",
+                desc: "To eliminate excess Kappa osha, primarily from the respiratory and digestive tract.",
+                img: "assets/images-new/Vamana.png",
+                meaning: ``,
+                types: [],
+                procedure: [
+                  "Pre-procedure: Internal and external operation (Smetana) and sudation (Sweden).",
+                  "Emesis is induced using herbal decoctions like Madan Phaal, Licorice, or salt water.",
+                  "The procedure is supervised to ensure safe vomiting.",
+                ],
+                benefits: [
+                  "Effective in conditions like asthma, bronchitis, sinus congestion, chronic cold, and skin diseases.",
+                  "Enhances metabolism and mental clarity.",
+                ],
+              },
+              {
+                name: "Virechana (Purgation Therapy)",
+                icon: "assets/images-new/ayurvedic2.png",
+                desc: "To eliminate excess Pitta osha, especially from the liver, gallbladder, and small intestine.",
+                img: "assets/images-new/Virechana (Purgation Therapy).png",
+                meaning: "",
+                types: [],
+                procedure: [
+                  "Pre-procedure: Similar to Vamana (Smetana and Sweden).",
+                  "Purgatives like Trivia (Opercula turpethum) or Castor oil are administered.",
+                  "Leads to controlled purgation.",
+                ],
+                benefits: [
+                  "Used for skin disorders (eczema, psoriasis), jaundice, acidity, liver issues, and allergies.",
+                  "Promotes clarity and calmness.",
+                ],
+              },
+              {
+                name: "Basti (Therapeutic Enema)",
+                icon: "assets/images-new/ayurvedic3.png",
+                desc: "Primarily used to treat Vata dosha disorders. Considered the most important Panchakarma therapy.",
+                img: "assets/images-new/Basti (Therapeutic Enema).png",
+                meaning: "",
+                types: [
+                  "Anuvasana Basti (Oil Enema): Nourishing, lubricating; uses medicated oils.",
+                  "Niruha Basti (Decoction Enema): Cleansing; uses herbal decoctions.",
+                ],
+                procedure: [
+                  "Administered through the rectum.",
+                  "Often done in a series over several days (e.g., 8, 15, or 30 days depending on the disease and strength).",
+                ],
+                benefits: [
+                  "Helpful in arthritis, constipation, neurological disorders, back pain, sciatica, and infertility.",
+                  "Balances Vata and improves strength and immunity.",
+                ],
+              },
+              {
+                name: "Nasya (Nasal Administration)",
+                icon: "assets/images-new/ayurvedic4.png",
+                desc: "Cleansing and nourishing the head region, especially the nose and sinuses.",
+                img: "assets/images-new/1.png",
+                meaning: "",
+                types: [
+                  "Marsha Nasya: Medicated oils or powders for deep cleansing.",
+                  "Pratimarsha Nasya: Daily use of small oil drops.",
+                ],
+                procedure: [
+                  "Administering oils like Anu Taila or powders through the nasal passage.",
+                  "Often includes massage and steam therapy beforehand.",
+                ],
+                benefits: [
+                  "Treats sinusitis, migraines, headaches, allergies, hair fall, and mental stress.",
+                  "Enhances sensory organ clarity and mental functions.",
+                ],
+              },
+              {
+                name: "Raktamokshana (Bloodletting Therapy)",
+                icon: "assets/images/favicon.png",
+                desc: "To remove impure blood and reduce Pitta-related disorders.",
+                img: "assets/images-new/Raktamokshana (Bloodletting Therapy).png",
+                meaning: "",
+                types: [],
+                procedure: [
+                  "Warm medicated oil (chosen according to dosha type) is applied head to toe.",
+                  "Rhythmic strokes are used for around 45–60 minutes.",
+                  "Supportive Procedures (Poorva & Paschat Karma):",
+                  "→ Poorva Karma (Preparation):",
+                  "   • Snehana: Internal & external oleation using medicated ghee/oils.",
+                  "   • Swedana: Fomentation therapy (steam, hot compresses) to loosen toxins.",
+                  "→ Paschat Karma (Post-procedure care):",
+                  "   • Special diet (Samsarjana Krama), rest, and lifestyle recommendations to stabilize the system.",
+                ],
+                benefits: [
+                  "Treats skin conditions like eczema, psoriasis, acne, and abscesses.",
+                  "Effective in hypertension, gout, and localized swelling.",
+                ],
+              },
+            ];
+
+            const deptList2 = document.getElementById("deptList2");
+            const deptTitle2 = document.getElementById("deptTitle2");
+            const deptDesc2 = document.getElementById("deptDesc2");
+            const deptImage2 = document.getElementById("deptImage2");
+            const procedureList2 = document.getElementById("procedureList2");
+            const typeList2 = document.getElementById("typeList2");
+            const typeSection = document.getElementById("typeSection");
+            const benefitsList2 = document.getElementById("benefitsList2");
+
+            function renderDepartments2() {
+              departments2.forEach((dept, index) => {
+                const card = document.createElement("div");
+                card.className = "dept-card" + (index === 0 ? " active" : "");
+                card.innerHTML = `
+              <div class="dept-icon">
+                <img src="${dept.icon}" alt="${dept.name} icon" style="width: 50px; height: 50px;" />
+              </div>
+              <div>${dept.name}</div>
+            `;
+                card.onclick = () => selectDepartment2(index);
+                deptList2.appendChild(card);
+              });
+            }
+
+            function selectDepartment2(index) {
+              document
+                .querySelectorAll("#deptList2 .dept-card")
+                .forEach((card) => card.classList.remove("active"));
+              deptList2.children[index].classList.add("active");
+
+              const dept = departments2[index];
+              deptTitle2.textContent = dept.name;
+              deptDesc2.textContent = dept.desc;
+              deptImage2.src = dept.img;
+              deptImage2.alt = dept.name;
+
+              // PROCEDURE
+              procedureList2.innerHTML = "";
+              dept.procedure.forEach((step) => {
+                const li = document.createElement("li");
+                li.textContent = step;
+                procedureList2.appendChild(li);
+              });
+
+              // BENEFITS
+              benefitsList2.innerHTML = "";
+              dept.benefits.forEach((benefit) => {
+                const li = document.createElement("li");
+                li.textContent = benefit;
+                benefitsList2.appendChild(li);
+              });
+
+              // TYPES
+              typeList2.innerHTML = "";
+              if (dept.types && dept.types.length > 0) {
+                typeSection.style.display = "block";
+                dept.types.forEach((type) => {
+                  const li = document.createElement("li");
+                  li.textContent = type;
+                  typeList2.appendChild(li);
+                });
+              } else {
+                typeSection.style.display = "none";
+              }
+            }
+            function scrollSlider2(offset) {
+              deptList2.scrollLeft += offset;
+            }
+            renderDepartments2();
+            selectDepartment2(0); // Initialize
+          </script>
+        </div>
+      </div>
+
+      <div class="ayur-bgshape ayur-why-bgshape">
+        <img src="assets/images/bg-shape4.png" alt="img" />
+        <img src="assets/images/bg-leaf4.png" alt="img" />
+      </div>
+    </div>
+
+    <!------------- Trending Product Section end ----------->
