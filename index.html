@@ -740,7 +740,7 @@ Author: PixelNX
       <body>
 
         <div class="ayur-doctor-section">
-          <img src="doctor-swathi.jpg" alt="Dr. Swathi Magari">
+          <img src="assets/images-new/dr-swathi-magari.jpg" alt="Dr. Swathi Magari">
           <h2>Dr. Swathi Magari</h2>
           <h3>BAMS, MD (Ayurveda), Diploma in Yoga Ayurveda</h3>
           <p>
@@ -896,14 +896,14 @@ Author: PixelNX
             const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
             if (isMobile) {
-              window.location.href = "tel:+91XXXXXXXXXX";
+              window.location.href = "tel:+918147057666";
             } else {
               document.getElementById("callPopup").style.display = "block";
             }
           });
 
           function copyPhone() {
-            const phone = "+91XXXXXXXXXX";
+            const phone = "+91 8147057666";
             navigator.clipboard.writeText(phone).then(() => {
               alert("Phone number copied to clipboard!");
             });
